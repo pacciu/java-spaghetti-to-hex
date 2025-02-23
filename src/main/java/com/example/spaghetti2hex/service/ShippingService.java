@@ -1,4 +1,4 @@
-package com.example.spaghetti2hex.spaghetti;
+package com.example.spaghetti2hex.service;
 
 import com.example.spaghetti2hex.ports.CourierPort;
 import com.example.spaghetti2hex.ports.NotifierPort;
