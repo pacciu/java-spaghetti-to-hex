@@ -27,7 +27,7 @@ public class ShippingService {
   public void processShipment(String orderId, String customerEmail, String address, double weight) {
     try {
       double shippingCost = calculateShippingCosts(address, weight);
-      String trackingNumber = callCourierApi(orderId, address);
+      String trackingNumber = processCourier(orderId, address);
       notify(customerEmail, trackingNumber, shippingCost);
     } catch (Exception e) {
       LOG.error("While shipping: " + e.getMessage(), e);
@@ -47,7 +47,7 @@ public class ShippingService {
              .block();
   }
 
-  private String callCourierApi(String orderId, String address) {
+  private String processCourier(String orderId, String address) {
     Map<String, Object> requestBody = new HashMap<>();
     requestBody.put("address", address);
     requestBody.put("weight", orderId);
