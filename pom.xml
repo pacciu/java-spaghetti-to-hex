@@ -23,9 +23,21 @@
 	</developers>
 	<modules>
 		<module>hex-spring-boot</module>
+		<module>hex-port</module>
+		<module>hex-kafka-adapter</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>hex-port</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
