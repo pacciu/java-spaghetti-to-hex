@@ -27,6 +27,7 @@
 		<module>hex-kafka-adapter</module>
 		<module>hex-mail-adapter</module>
 		<module>hex-courier-adapter</module>
+		<module>hex-shipping-costs-adapter</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>
@@ -52,6 +53,11 @@
 			<dependency>
 				<groupId>com.example</groupId>
 				<artifactId>hex-courier-adapter</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>hex-shipping-costs-adapter</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
