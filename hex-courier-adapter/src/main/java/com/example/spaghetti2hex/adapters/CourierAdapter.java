@@ -3,6 +3,7 @@ package com.example.spaghetti2hex.adapters;
 import com.example.spaghetti2hex.ports.CourierPort;
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -11,7 +12,7 @@ public class CourierAdapter implements CourierPort {
 
   private final WebClient webClient;
 
-  public CourierAdapter(WebClient webClient) {
+  public CourierAdapter(@Qualifier("webClientCourier") WebClient webClient) {
     this.webClient = webClient;
   }
 

@@ -40,6 +40,11 @@
 
     <dependency>
       <groupId>com.example</groupId>
+      <artifactId>hex-courier-adapter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.example</groupId>
       <artifactId>hex-port</artifactId>
     </dependency>
 
