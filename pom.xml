@@ -25,6 +25,7 @@
 		<module>hex-spring-boot</module>
 		<module>hex-port</module>
 		<module>hex-kafka-adapter</module>
+		<module>hex-mail-adapter</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>
@@ -35,6 +36,16 @@
 			<dependency>
 				<groupId>com.example</groupId>
 				<artifactId>hex-port</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>hex-mail-adapter</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>hex-kafka-adapter</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
